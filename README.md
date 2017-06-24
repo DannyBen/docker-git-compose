@@ -1,7 +1,7 @@
 Docker Git Compose
 ==================================================
 
-Docker image with docker, git and docker-compose
+Docker image with docker, git and docker-compose.
 
 ```
 # Basic run

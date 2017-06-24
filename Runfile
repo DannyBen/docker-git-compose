@@ -1,0 +1,20 @@
+title   "Docker Utilities"
+summary "Utilities for building this docker image"
+version "0.0.2"
+
+image_name = 'dannyben/docker-git-compose'
+
+help   "Build the docker image."
+action :build do
+  run! "docker build -t #{image_name} ."
+end
+
+help   "Push the image to Docker Hub."
+action :push do
+  run! "docker push #{image_name}"
+end
+
+help   "Run bash in the docker."
+action :bash do
+  run! "docker run -it #{image_name} bash"
+end

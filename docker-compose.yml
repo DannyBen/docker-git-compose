@@ -1,0 +1,10 @@
+version: '2'
+services:
+
+  docker:  
+    build: .
+    image: dannyben/docker-git-compose
+
+  bash:  
+    image: dannyben/docker-git-compose
+    command: bash
